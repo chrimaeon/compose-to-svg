@@ -20,9 +20,10 @@ const val CANVAS_WIDTH = 1280
 const val CANVAS_HEIGHT = 720
 
 @OptIn(InternalComposeUiApi::class)
-fun main() =
+fun main(args: Array<String>) =
     application {
-        val outFile = File("./compose.svg")
+        val outputFilePath = args.firstOrNull() ?: "./output.svg"
+        val outFile = File(outputFilePath)
         outFile.outputStream().use { fos ->
             OutputWStream(fos).use {
                 val scene =

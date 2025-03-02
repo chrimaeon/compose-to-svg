@@ -22,13 +22,11 @@ import androidx.compose.ui.Modifier
 import compose_to_svg.composeapp.generated.resources.Res
 import compose_to_svg.composeapp.generated.resources.compose_multiplatform
 import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
-@Preview
-fun App() {
+fun App(modifier: Modifier = Modifier) {
     MaterialTheme {
-        Scaffold {
+        Scaffold(modifier = modifier) {
             Column(Modifier.padding(it).fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
                 Button(onClick = { }) {
                     Text("Click me!")
