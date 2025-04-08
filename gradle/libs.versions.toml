@@ -1,7 +1,7 @@
 [versions]
 androidx-lifecycle = "2.8.4"
-kotlin = "2.1.10"
-gradle = "8.12.1"
+kotlin = "2.1.20"
+gradle = "8.13"
 ktlint-compose = "0.4.22"
 
 [libraries]

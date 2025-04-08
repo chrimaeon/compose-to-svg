@@ -1,12 +1,11 @@
-import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
-import com.github.benmanes.gradle.versions.updates.gradle.GradleReleaseChannel
-import org.gradle.kotlin.dsl.withType
-
 /*
  * Copyright (c) 2025. Christian Grach <christian.grach@cmgapps.com>
  *
  * SPDX-License-Identifier: Apache-2.0
  */
+
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+import com.github.benmanes.gradle.versions.updates.gradle.GradleReleaseChannel
 
 plugins {
     alias(libs.plugins.composeMultiplatform) apply false
